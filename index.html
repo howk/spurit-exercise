@@ -67,52 +67,52 @@
 							</a>
 							<section class="accordion" aria-label="Product info">
 								<div class="accordion__item">
-									<h2 id="productInfo1"><button class="accordion__item__title">Sizing & Fit</button></h2>
+									<h2 id="productInfo1"><button type="button" class="accordion__item__title">Sizing & Fit</button></h2>
 									<div class="accordion__item__body" aria-labelledby="productInfo1">Olga is 175cm, she is wearing a size S.</div>
 								</div>
 								<div class="accordion__item">
-									<h2 id="productInfo2"><button class="accordion__item__title">Composition & Care</button></h2>
+									<h2 id="productInfo2"><button type="button" class="accordion__item__title">Composition & Care</button></h2>
 									<div class="accordion__item__body" aria-labelledby="productInfo2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 								</div>
 								<div class="accordion__item">
-									<h2 id="productInfo3"><button class="accordion__item__title">Delivery & Returns</button></h2>
+									<h2 id="productInfo3"><button type="button" class="accordion__item__title">Delivery & Returns</button></h2>
 									<div class="accordion__item__body" aria-labelledby="productInfo3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
 								</div>
 							</section>
 						</div>
 						<div class="product-card__right">
 							<h1 class="product-card__title" id="productName">White unisex t-shirt</h1>
-							<div class="product-card__price" aria-label="Price">
+							<p class="product-card__price" aria-label="Price">
 								<span aria-label="currency">CHF</span>
 								<span aria-label="value" id="productPriceValue">40</span>
-							</div>
+							</p>
 							<div class="product-card__infolabel">tax included</div>
 							<form aria-label="Product parameters" class="product-card__form" action="">
 								<fieldset class="product-card__parameter">
 									<legend class="product-card__label">Size</legend>
 									<label class="input-radio">
-										<input type="radio" name="product_size" value="xs" checked>
-										<span>XS</span>
+										<input class="input-radio__input" type="radio" name="product_size" value="xs" checked>
+										<span class="input-radio__visual">XS</span>
 									</label>
 									<label class="input-radio">
-										<input type="radio" name="product_size" value="s">
-										<span>S</span>
+										<input class="input-radio__input" type="radio" name="product_size" value="s">
+										<span class="input-radio__visual">S</span>
 									</label>
 									<label class="input-radio">
-										<input type="radio" name="product_size" value="m">
-										<span>M</span>
+										<input class="input-radio__input" type="radio" name="product_size" value="m">
+										<span class="input-radio__visual">M</span>
 									</label>
 									<label class="input-radio">
-										<input type="radio" name="product_size" value="l">
-										<span>L</span>
+										<input class="input-radio__input" type="radio" name="product_size" value="l">
+										<span class="input-radio__visual">L</span>
 									</label>
 									<label class="input-radio">
-										<input type="radio" name="product_size" value="xl">
-										<span>XL</span>
+										<input class="input-radio__input" type="radio" name="product_size" value="xl">
+										<span class="input-radio__visual">XL</span>
 									</label>	
 									<label class="input-radio">
-										<input type="radio" name="product_size" value="2xl" disabled>
-										<span>2XL</span>
+										<input class="input-radio__input" type="radio" name="product_size" value="2xl" disabled>
+										<span class="input-radio__visual">2XL</span>
 									</label>																					
 								</fieldset>
 								<fieldset class="product-card__parameter">
@@ -142,11 +142,16 @@
 										<span></span>
 									</label>																										
 								</fieldset>
-								<div class="product-card__parameter">
-									<label class="product-card__label" for="">Quantity</label>
+								<div class="product-card__parameter product-card__parameter_last">
+									<label class="product-card__label" for="productQuantity">Quantity</label>
+									<div class="input-quantity">
+										<button type="button" class="input-quantity__btn" data-action="decrease" class="" aria-label="Decrease">−</button>
+										<input type="number" class="input-quantity__field" id="productQuantity" name="product_quantity" value="1">
+										<button type="button" class="input-quantity__btn" data-action="increase" aria-label="Increase">+</button>
+									</div>
 								</div>
-								<button class="btn btn_secondary btn_hollow" aria-label="Add to cart">Add to cart</button>
-								<button class="btn btn_primary"  aria-label="Buy it now">Buy it now</button>
+								<button type="submit" class="btn btn_secondary btn_hollow" aria-label="Add to cart">Add to cart</button>
+								<button type="submit" class="btn btn_primary"  aria-label="Buy it now">Buy it now</button>
 							</form>
 							<section class="product-card__description" aria-label="Product description">
 								<p>A unisex basic garment with a loose fit. Light and comfortable to your skin.</p>
@@ -158,9 +163,9 @@
 						<h2>You may also like</h2>
 						<div class="products-grid">
 							<article class="products-grid__item">
-								<div class="photo">
+								<a href="#" class="photo">
 									<img src="images/photo2.jpg" alt="">
-								</div>
+								</a>
 								<div class="name">Product name</div>
 								<ul class="colors" aria-label="Colors">
 									<li aria-label="red"></li>
@@ -173,9 +178,9 @@
 								</div>
 							</article>
 							<article class="products-grid__item">
-								<div class="photo">
+								<a href="#" class="photo">
 									<img src="images/photo3.jpg" alt="">
-								</div>
+								</a>
 								<div class="name">Product name</div>
 								<ul class="colors" aria-label="Colors">
 									<li aria-label="red"></li>
@@ -188,9 +193,9 @@
 								</div>
 							</article>
 							<article class="products-grid__item">
-								<div class="photo">
+								<a href="#" class="photo">
 									<img src="images/photo4.jpg" alt="">
-								</div>
+								</a>
 								<div class="name">Product name</div>
 								<ul class="colors" aria-label="Colors">
 									<li aria-label="red"></li>
@@ -203,9 +208,9 @@
 								</div>
 							</article>
 							<article class="products-grid__item">
-								<div class="photo">
+								<a href="#" class="photo">
 									<img src="images/photo5.jpg" alt="">
-								</div>
+								</a>
 								<div class="name">Product name</div>
 								<ul class="colors" aria-label="Colors">
 									<li aria-label="red"></li>
@@ -232,14 +237,14 @@
 								<ul class="social">
 									<li class="social__item">
 										<a class="social__link" href="#" aria-label="Facebook">
-											<svg class="social__logo" width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="social__logo" width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path fill-rule="evenodd" clip-rule="evenodd" d="M9.02694 9.9817H6.42882V19.5H2.49245V9.9817H0.6203V6.63659H2.49245V4.47193C2.49245 2.92396 3.22776 0.5 6.46386 0.5L9.37967 0.512199V3.7592H7.26406C6.91704 3.7592 6.42908 3.93258 6.42908 4.671V6.63971H9.37084L9.02694 9.9817Z" fill="#5E626B"/>
 											</svg>
 										</a>
 									</li>							
 									<li class="social__item">
 										<a class="social__link" href="#" aria-label="Instagram">
-											<svg class="social__logo" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="social__logo" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M14.7071 0.5C17.3502 0.5 19.5 2.65013 19.5 5.29293V14.7071C19.5 17.3502 17.3502 19.5 14.7071 19.5H5.29293C2.65013 19.5 0.5 17.3502 0.5 14.7071V5.29293C0.5 2.65013 2.65013 0.5 5.29293 0.5H14.7071ZM14.7071 2.56779H5.29293C3.7903 2.56779 2.56779 3.7903 2.56779 5.29293V14.7071C2.56779 16.2097 3.7903 17.4326 5.29293 17.4326H14.7071C16.2097 17.4326 17.4326 16.21 17.4326 14.7071V5.29293C17.4326 3.7903 16.21 2.56779 14.7071 2.56779ZM10 5.10678C12.6984 5.10678 14.8936 7.30195 14.8936 10C14.8936 12.698 12.698 14.8936 10 14.8936C7.30195 14.8936 5.10678 12.6984 5.10678 10C5.10678 7.30195 7.30195 5.10678 10 5.10678ZM10 7.17456C8.44247 7.17456 7.17421 8.44212 7.17421 9.99965C7.17421 11.5579 8.44247 12.8258 10 12.8258C11.5582 12.8258 12.8254 11.5579 12.8254 9.99965C12.8254 8.44247 11.5579 7.17456 10 7.17456ZM15.0509 3.80297C15.6892 3.80297 16.2086 4.32238 16.2086 4.96073C16.2086 5.59909 15.6892 6.1185 15.0509 6.1185C14.4122 6.1185 13.8928 5.59909 13.8928 4.96073C13.8928 4.32238 14.4122 3.80297 15.0509 3.80297Z" fill="#5E626B"/>
 											</svg>
 										</a>
@@ -249,7 +254,7 @@
 						</div>
 						<div class="footer__columns__col">
 							<p class="footer__heading">Company</p>
-							<nav aria-label="Footer navigation primary">
+							<nav aria-label="Footer primary">
 								<ul class="footer__list">
 									<li class="footer__list__item">
 										<a class="footer__list__link" href="#">Woman</a>
@@ -271,7 +276,7 @@
 						</div>
 						<div class="footer__columns__col">
 							<p class="footer__heading">Useful links</p>
-							<nav aria-label="Footer navigation secondary">
+							<nav aria-label="Footer secondary">
 								<ul class="footer__list">
 									<li class="footer__list__item">
 										<a class="footer__list__link" href="#">Privacy Policy</a>

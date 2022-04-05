@@ -558,10 +558,88 @@ fieldset legend {
   margin-bottom: 10px;
 }
 
+.product-card__parameter_last {
+  margin-bottom: 40px;
+}
+
 .product-card__infolabel {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.025em;
   color: #5E626B;
   margin: 0 0 20px 0;
+}
+
+.input-quantity {
+  display: inline-flex;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: stretch;
+  border: 1px var(--border-color-light) solid;
+}
+
+.input-quantity__btn {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5E626B;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.input-quantity__btn:focus {
+  outline-color: #1ae9d7;
+  box-shadow: 0 0 7px #1ae9d7; 
+}
+
+.input-quantity__field {
+  border-left: 1px var(--border-color-light) solid;
+  border-right: 1px var(--border-color-light) solid;
+  width: 40px;
+  text-align: center;
+  color: var(--text-color-primary);
+}
+
+.input-quantity__field:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #1ae9d7;
+  box-shadow: 0 0 7px #1ae9d7; 
+}
+
+.input-quantity__field::-webkit-outer-spin-button,
+.input-quantity__field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-quantity__field {
+  -moz-appearance: textfield;
+}
+
+.input-radio {
+  position: relative;
+}
+
+.input-radio__input {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.input-radio__visual {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+  display: inline-flex;
+}
+
+.products-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
