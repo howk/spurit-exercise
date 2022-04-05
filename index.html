@@ -90,57 +90,97 @@
 							<form aria-label="Product parameters" class="product-card__form" action="">
 								<fieldset class="product-card__parameter">
 									<legend class="product-card__label">Size</legend>
-									<label class="input-radio">
-										<input class="input-radio__input" type="radio" name="product_size" value="xs" checked>
-										<span class="input-radio__visual">XS</span>
-									</label>
-									<label class="input-radio">
-										<input class="input-radio__input" type="radio" name="product_size" value="s">
-										<span class="input-radio__visual">S</span>
-									</label>
-									<label class="input-radio">
-										<input class="input-radio__input" type="radio" name="product_size" value="m">
-										<span class="input-radio__visual">M</span>
-									</label>
-									<label class="input-radio">
-										<input class="input-radio__input" type="radio" name="product_size" value="l">
-										<span class="input-radio__visual">L</span>
-									</label>
-									<label class="input-radio">
-										<input class="input-radio__input" type="radio" name="product_size" value="xl">
-										<span class="input-radio__visual">XL</span>
-									</label>	
-									<label class="input-radio">
-										<input class="input-radio__input" type="radio" name="product_size" value="2xl" disabled>
-										<span class="input-radio__visual">2XL</span>
-									</label>																					
+									<ul class="input-group">
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_size" value="xs" checked>
+												<span class="input-radio__visual input-radio-size">XS</span>
+											</label>
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_size" value="s">
+												<span class="input-radio__visual input-radio-size">S</span>
+											</label>
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_size" value="m">
+												<span class="input-radio__visual input-radio-size">M</span>
+											</label>
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_size" value="l">
+												<span class="input-radio__visual input-radio-size">L</span>
+											</label>
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_size" value="xl">
+												<span class="input-radio__visual input-radio-size">XL</span>
+											</label>	
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_size" value="2xl" disabled>
+												<span class="input-radio__visual input-radio-size">2XL</span>
+											</label>	
+										</li>
+									</ul>					
 								</fieldset>
 								<fieldset class="product-card__parameter">
 									<legend class="product-card__label">Color<span aria-hidden="true"> - White</span></legend>
-									<label class="input-radio">
-										<input type="radio" name="product_color" data-name-display="White" value="white" checked>
-										<span></span>
-									</label>
-									<label class="input-radio">
-										<input type="radio" name="product_color" data-name-display="Black" value="black">
-										<span></span>
-									</label>
-									<label class="input-radio">
-										<input type="radio" name="product_color" data-name-display="Grey" value="grey">
-										<span></span>
-									</label>
-									<label class="input-radio">
-										<input type="radio" name="product_color" data-name-display="Purple latter" value="purple">
-										<span></span>
-									</label>
-									<label class="input-radio">
-										<input type="radio" name="product_color" data-name-display="Color 1" value="color1">
-										<span></span>
-									</label>
-									<label class="input-radio">
-										<input type="radio" name="product_color" data-name-display="Color 2" value="color2">
-										<span></span>
-									</label>																										
+									<ul class="input-group">
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_color" data-name-display="White" value="white" checked>
+												<span class="input-radio__visual input-radio-color" title="White">
+													<span class="input-radio-color__sample" style="background-color: #ffffff; border: 1px #cccccc solid;"></span>
+												</span>
+											</label>											
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Black" value="black">
+												<span class="input-radio__visual input-radio-color" title="Black">
+													<span class="input-radio-color__sample" style="background-color: #1a1f29;"></span>
+												</span>
+											</label>
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Grey" value="grey">
+												<span class="input-radio__visual input-radio-color" title="Grey">
+													<span class="input-radio-color__sample" style="background-color: #aeaeb0;"></span>
+												</span>
+											</label>
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Purple latte" value="purple">
+												<span class="input-radio__visual input-radio-color" title="Purple latte">
+													<span class="input-radio-color__sample" style="background-color: #ba9be5;"></span>
+												</span>
+											</label>
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Color 1" value="color1" disabled>
+												<span class="input-radio__visual input-radio-color" title="Color 1">
+													<span class="input-radio-color__sample" style="background-color: #e9a0a7;"></span>
+												</span>
+											</label>
+										</li>
+										<li class="input-group__item">
+											<label class="input-radio">
+												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Color 2" value="color2" disabled>
+												<span class="input-radio__visual input-radio-color" title="Color 2">
+													<span class="input-radio-color__sample" style="background-color: #f8cab1;"></span>
+												</span>
+											</label>												
+										</li>										
+									</ul>										
 								</fieldset>
 								<div class="product-card__parameter product-card__parameter_last">
 									<label class="product-card__label" for="productQuantity">Quantity</label>

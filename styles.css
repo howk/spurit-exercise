@@ -620,10 +620,13 @@ fieldset legend {
 
 .input-radio {
   position: relative;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 
 .input-radio__input {
-  opacity: 0.1;
+  opacity: 0;
   position: absolute;
   left: 0;
   top: 0;
@@ -636,10 +639,95 @@ fieldset legend {
   height: 40px;
   z-index: 5;
   display: inline-flex;
+  cursor: pointer;
+}
+
+.input-radio-size {
+  border: 1px var(--border-color-light) solid;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  color: var(--text-color-primary);
+}
+
+.input-radio__input:checked + .input-radio-size {
+  border-color: var(--border-color-primary);
+}
+
+.input-radio__input:disabled + .input-radio-size {
+  border: none;
+  background-color: #F2F2F2;
+  color: #BDBDBD;
+  cursor: default;
+}
+.input-radio__input:disabled + .input-radio-size::after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 200%;
+  height: 1px;
+  border-top: 1px var(--border-color-light) solid;
+  transform: rotate(-45deg) translate(-50%, 50%);
+}
+
+.input-radio-color {
+  padding: 3px;
+}
+
+.input-radio-color:hover {
+  border: 1px var(--border-color-light) solid;
+  padding: 2px;
+}
+
+.input-radio__input:checked + .input-radio-color {
+  border: 1px var(--border-color-primary) solid;
+  padding: 2px;
+  cursor: default;
+}
+
+.input-radio__input:disabled + .input-radio-color {
+  border: none;
+  padding: 3px;
+  cursor: default;
+}
+
+.input-radio__input:disabled + .input-radio-color::after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 200%;
+  height: 1px;
+  border-top: 1px var(--border-color-light) solid;
+  transform: rotate(-45deg) translate(-50%, 50%);
+}
+
+.input-radio-color__sample {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: red;
 }
 
 .products-grid {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.input-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.input-group__item {
+  margin-left: 6px;
+  margin-right: 6px;
 }
