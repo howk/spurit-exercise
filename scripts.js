@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", () => {
   const $inputsColor = document.querySelectorAll('input[name=product_color]');
   const $formColorLabel = document.getElementById('productColorValue');
   $inputsColor.forEach((input) => {
