@@ -24,9 +24,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const $accordions = document.querySelectorAll('.accordion__item');
   $accordions.forEach((accordion) => {
-    const $accordionTitle = accordion.querySelector('.accordion__item__title');
+    const $accordionTitle = accordion.querySelector('.accordion__item-title');
     $accordionTitle.addEventListener('click', () => {
       accordion.classList.toggle('accordion__item_active');
+      const $title = accordion.querySelector('.accordion__item-title');
+      if (accordion.classList.contains('accordion__item_active')) {
+        $title.setAttribute('aria-expanded', 'true');
+      } else {
+        $title.setAttribute('aria-expanded', 'false');   
+      }
     });    
   });  
 })

@@ -29,7 +29,7 @@
 						</ul>
 					</nav>
 					<a class="header__logo" href="/">
-						<img class="header__logo__picture" src="images/logo.svg" alt="Susparsa store main page">
+						<img class="header__logo-picture" src="images/logo.svg" alt="Susparsa store main page">
 					</a>
 					<nav class="header__menu-secondary" aria-label="Secondary">
 						<ul class="menu">
@@ -40,12 +40,13 @@
 								<a class="menu__link" href="#">Search</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#">Cart (<span>0</span>)</a>
+								<a class="menu__link" href="#">Cart (<span class="v-h">with </span><span>0</span><span class="v-h"> items</span>)</a>
 							</li>		
 						</ul>
 					</nav>
 				</div>
 			</header>
+
 			<main class="page-content">
 				<div class="container">
 					<nav aria-label="Breadcrumbs">
@@ -61,6 +62,7 @@
 							</li>														
 						</ol>
 					</nav>
+
 					<section class="product-card" aria-label="Product card" id="skipLinkTarget" tabindex="-1">
 						<div class="product-card__right">
 							<h1 class="product-card__title" id="productName">White unisex t-shirt</h1>
@@ -169,8 +171,8 @@
 										<button type="button" class="input-quantity__btn" data-action="increase" aria-label="Increase quantity">+</button>
 									</div>
 								</div>
-								<button type="submit" class="btn btn_secondary btn_hollow">Add to cart</button>
-								<button type="submit" class="btn btn_primary">Buy it now</button>
+								<button type="submit" class="btn btn_secondary btn_hollow" aria-label="Add to cart `White unisex t-shirt`">Add to cart</button>
+								<button type="submit" class="btn btn_primary" aria-label="Buy now `White unisex t-shirt`">Buy it now</button>
 							</form>
 							<div class="product-card__description">
 								<p>A unisex basic garment with a loose fit. Light and comfortable to your skin.</p>
@@ -179,39 +181,40 @@
 						</div>						
 						<div class="product-card__left">
 							<a class="product-card__photo-big" href="#">
-								<img class="product-card__photo-big__picture" src="images/photo1.jpg" srcset="images/photo1_x2.jpg 2x" alt="Big photo of white unisex t-shirt">
+								<img class="product-card__photo-big-picture" src="images/photo1.jpg" srcset="images/photo1_x2.jpg 2x" alt="Big photo of white unisex t-shirt">
 							</a>
 							<section class="accordion" aria-label="Product info">
 								<div class="accordion__item">
 									<h2 id="productInfo1">
-										<button type="button" class="accordion__item__title">Sizing & Fit</button>
+										<button type="button" aria-controls="productInfo1Body" class="accordion__item-title" aria-expanded="false">Sizing & Fit</button>
 									</h2>
-									<div class="accordion__item__body" aria-labelledby="productInfo1">Olga is 175cm, she is wearing a size S.</div>
+									<div class="accordion__item-body" id="productInfo1Body" aria-labelledby="productInfo1">Olga is 175cm, she is wearing a size S.</div>
 								</div>
 								<div class="accordion__item">
 									<h2 id="productInfo2">
-										<button type="button" class="accordion__item__title">Composition & Care</button>
+										<button type="button" aria-controls="productInfo2Body" class="accordion__item-title" aria-expanded="false">Composition & Care</button>
 									</h2>
-									<div class="accordion__item__body" aria-labelledby="productInfo2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+									<div class="accordion__item-body" id="productInfo2Body" aria-labelledby="productInfo2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
 								</div>
 								<div class="accordion__item">
 									<h2 id="productInfo3">
-										<button type="button" class="accordion__item__title">Delivery & Returns</button>
+										<button type="button" aria-controls="productInfo3Body" class="accordion__item-title" aria-expanded="false">Delivery & Returns</button>
 									</h2>
-									<div class="accordion__item__body" aria-labelledby="productInfo3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+									<div class="accordion__item-body" id="productInfo3Body" aria-labelledby="productInfo3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
 								</div>
 							</section>
 						</div>
 					</section>
+
 					<section class="products-similar" aria-labelledby="labelProductsSimiilar">
 						<h2 class="heading-2 products-similar__heading-2" id="labelProductsSimiilar">You may also like</h2>
 						<div class="products-grid">
 							<article class="products-grid__item">
-								<a href="#" tabindex="-1" class="products-grid__item__photo" aria-hidden="true">
-									<img src="images/photo2.jpg" class="products-grid__item__picture" srcset="images/photo2_x2.jpg 2x" alt="">
+								<a href="#" tabindex="-1" class="products-grid__item-photo" aria-hidden="true">
+									<img src="images/photo2.jpg" class="products-grid__item-picture" srcset="images/photo2_x2.jpg 2x" alt="">
 								</a>
-								<h3 class="products-grid__item__name"><a href="#">Product name</a></h3>
-								<ul class="colors-palette products-grid__item__colors-palette" aria-label="Product colors">
+								<h3 class="products-grid__item-name"><a href="#">Product name</a></h3>
+								<ul class="colors-palette products-grid__item-colors-palette" aria-label="Product colors">
 									<li class="colors-palette__item" title="Color name 1">
 										<span class="colors-palette__sample" style="background-color: #C88252;">
 											<span class="v-h">Color name 1</span>
@@ -233,16 +236,16 @@
 										</span>
 									</li>									
 								</ul>
-								<p class="products-grid__item__price">
+								<p class="products-grid__item-price">
 									<span class="v-h">Price </span>CHF 40
 								</p>
 							</article>
 							<article class="products-grid__item">
-								<a href="#" tabindex="-1" class="products-grid__item__photo" aria-hidden="true">
-									<img src="images/photo3.jpg" class="products-grid__item__picture" srcset="images/photo3_x2.jpg 2x" alt="">
+								<a href="#" tabindex="-1" class="products-grid__item-photo" aria-hidden="true">
+									<img src="images/photo3.jpg" class="products-grid__item-picture" srcset="images/photo3_x2.jpg 2x" alt="">
 								</a>
-								<h3 class="products-grid__item__name"><a href="#">Very long product name for testing purposes</a></h3>
-								<ul class="colors-palette products-grid__item__colors-palette" aria-label="Product colors">
+								<h3 class="products-grid__item-name"><a href="#">Very long product name for testing purposes</a></h3>
+								<ul class="colors-palette products-grid__item-colors-palette" aria-label="Product colors">
 									<li class="colors-palette__item" title="Red">
 										<span class="colors-palette__sample" style="background-color: red;">
 											<span class="v-h">Red</span>
@@ -259,19 +262,19 @@
 										</span>
 									</li>
 								</ul>
-								<p class="products-grid__item__price">
+								<p class="products-grid__item-price">
 									<span class="v-h">Price </span>CHF 40
 								</p>
 							</article>
 							<article class="products-grid__item">
-								<ul class="product-tags products-grid__item__product-tags">
+								<ul class="product-tags products-grid__item-product-tags">
 									<li class="product-tags__item">Sold out</li>
 								</ul>
-								<a href="#" tabindex="-1" class="products-grid__item__photo" aria-hidden="true">
-									<img src="images/photo4.jpg" class="products-grid__item__picture" srcset="images/photo4_x2.jpg 2x" alt="">
+								<a href="#" tabindex="-1" class="products-grid__item-photo" aria-hidden="true">
+									<img src="images/photo4.jpg" class="products-grid__item-picture" srcset="images/photo4_x2.jpg 2x" alt="">
 								</a>
-								<h3 class="products-grid__item__name"><a href="#">Product name</a></h3>
-								<ul class="colors-palette products-grid__item__colors-palette" aria-label="Product colors">
+								<h3 class="products-grid__item-name"><a href="#">Product name</a></h3>
+								<ul class="colors-palette products-grid__item-colors-palette" aria-label="Product colors">
 									<li class="colors-palette__item" title="Color name 1">
 										<span class="colors-palette__sample" style="background-color: #C88252;">
 											<span class="v-h">Color name 1</span>
@@ -293,16 +296,16 @@
 										</span>
 									</li>									
 								</ul>
-								<p class="products-grid__item__price">
+								<p class="products-grid__item-price">
 									<span class="v-h">Price </span>CHF 40
 								</p>
 							</article>
 							<article class="products-grid__item">
-								<a href="#" tabindex="-1" class="products-grid__item__photo" aria-hidden="true">
-									<img src="images/photo5.jpg" class="products-grid__item__picture" srcset="images/photo5_x2.jpg 2x" alt="">
+								<a href="#" tabindex="-1" class="products-grid__item-photo" aria-hidden="true">
+									<img src="images/photo5.jpg" class="products-grid__item-picture" srcset="images/photo5_x2.jpg 2x" alt="">
 								</a>
-								<h3 class="products-grid__item__name"><a href="#">Product name</a></h3>
-								<ul class="colors-palette products-grid__item__colors-palette" aria-label="Product colors">
+								<h3 class="products-grid__item-name"><a href="#">Product name</a></h3>
+								<ul class="colors-palette products-grid__item-colors-palette" aria-label="Product colors">
 									<li class="colors-palette__item" title="Color name 1">
 										<span class="colors-palette__sample" style="background-color: #C88252;">
 											<span class="v-h">Color name 1</span>
@@ -324,7 +327,7 @@
 										</span>
 									</li>									
 								</ul>
-								<p class="products-grid__item__price">
+								<p class="products-grid__item-price">
 									<span class="v-h">Price </span>CHF 40
 								</p>
 							</article>												
@@ -332,24 +335,25 @@
 					</section>
 				</div>
 			</main>
+
 			<footer class="footer">
 				<div class="container footer__container">
 					<div class="footer__columns">
-						<div class="footer__columns__col">
-							<p class="footer__heading">About</p>
+						<div class="footer__col">
+							<h2 class="footer__heading">About</h2>
 							<address class="footer__address">
 								<p>Susparsa Store</p>
 								<p>Geneva, Switzerland</p>
 								<ul class="social" aria-label="Our social accounts">
 									<li class="social__item">
-										<a class="social__link" href="#" aria-label="Facebook">
+										<a class="social__link" href="#" target="_blank" aria-label="Facebook">
 											<svg aria-hidden="true" class="social__logo" width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path fill-rule="evenodd" clip-rule="evenodd" d="M9.02694 9.9817H6.42882V19.5H2.49245V9.9817H0.6203V6.63659H2.49245V4.47193C2.49245 2.92396 3.22776 0.5 6.46386 0.5L9.37967 0.512199V3.7592H7.26406C6.91704 3.7592 6.42908 3.93258 6.42908 4.671V6.63971H9.37084L9.02694 9.9817Z" fill="#5E626B"/>
 											</svg>
 										</a>
 									</li>							
 									<li class="social__item">
-										<a class="social__link" href="#" aria-label="Instagram">
+										<a class="social__link" href="#" target="_blank" aria-label="Instagram">
 											<svg aria-hidden="true" class="social__logo" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M14.7071 0.5C17.3502 0.5 19.5 2.65013 19.5 5.29293V14.7071C19.5 17.3502 17.3502 19.5 14.7071 19.5H5.29293C2.65013 19.5 0.5 17.3502 0.5 14.7071V5.29293C0.5 2.65013 2.65013 0.5 5.29293 0.5H14.7071ZM14.7071 2.56779H5.29293C3.7903 2.56779 2.56779 3.7903 2.56779 5.29293V14.7071C2.56779 16.2097 3.7903 17.4326 5.29293 17.4326H14.7071C16.2097 17.4326 17.4326 16.21 17.4326 14.7071V5.29293C17.4326 3.7903 16.21 2.56779 14.7071 2.56779ZM10 5.10678C12.6984 5.10678 14.8936 7.30195 14.8936 10C14.8936 12.698 12.698 14.8936 10 14.8936C7.30195 14.8936 5.10678 12.6984 5.10678 10C5.10678 7.30195 7.30195 5.10678 10 5.10678ZM10 7.17456C8.44247 7.17456 7.17421 8.44212 7.17421 9.99965C7.17421 11.5579 8.44247 12.8258 10 12.8258C11.5582 12.8258 12.8254 11.5579 12.8254 9.99965C12.8254 8.44247 11.5579 7.17456 10 7.17456ZM15.0509 3.80297C15.6892 3.80297 16.2086 4.32238 16.2086 4.96073C16.2086 5.59909 15.6892 6.1185 15.0509 6.1185C14.4122 6.1185 13.8928 5.59909 13.8928 4.96073C13.8928 4.32238 14.4122 3.80297 15.0509 3.80297Z" fill="#5E626B"/>
 											</svg>
@@ -358,52 +362,52 @@
 								</ul>
 							</address>
 						</div>
-						<div class="footer__columns__col">
-							<p class="footer__heading">Company</p>
+						<div class="footer__col">
+							<h2 class="footer__heading">Company</h2>
 							<nav aria-label="Footer primary">
 								<ul class="footer__list">
-									<li class="footer__list__item">
-										<a class="footer__list__link" href="#">Woman</a>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Woman</a>
 									</li>
-									<li class="footer__list__item">
-										<a class="footer__list__link" href="#">Men</a>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Men</a>
 									</li>
-									<li class="footer__list__item">							
-										<a class="footer__list__link" href="#">Kids</a>
+									<li class="footer__list-item">							
+										<a class="footer__list-link" href="#">Kids</a>
 									</li>
-									<li class="footer__list__item">							
-										<a class="footer__list__link" href="#">About Us</a>
+									<li class="footer__list-item">							
+										<a class="footer__list-link" href="#">About Us</a>
 									</li>
-									<li class="footer__list__item">							
-										<a class="footer__list__link" href="#">Our Materials</a>
+									<li class="footer__list-item">							
+										<a class="footer__list-link" href="#">Our Materials</a>
 									</li>
 								</ul>								
 							</nav>
 						</div>
-						<div class="footer__columns__col">
-							<p class="footer__heading">Useful links</p>
+						<div class="footer__col">
+							<h2 class="footer__heading">Useful links</h2>
 							<nav aria-label="Footer secondary">
 								<ul class="footer__list">
-									<li class="footer__list__item">
-										<a class="footer__list__link" href="#">Privacy Policy</a>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Privacy Policy</a>
 									</li>
-									<li class="footer__list__item">
-										<a class="footer__list__link" href="#">Shipping Policy</a>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Shipping Policy</a>
 									</li>
-									<li class="footer__list__item">							
-										<a class="footer__list__link" href="#">Return & Refund Policy</a>
+									<li class="footer__list-item">							
+										<a class="footer__list-link" href="#">Return & Refund Policy</a>
 									</li>
-									<li class="footer__list__item">							
-										<a class="footer__list__link" href="#">Terms of Service</a>
+									<li class="footer__list-item">							
+										<a class="footer__list-link" href="#">Terms of Service</a>
 									</li>
-									<li class="footer__list__item">							
-										<a class="footer__list__link" href="#">Contact Us</a>
+									<li class="footer__list-item">							
+										<a class="footer__list-link" href="#">Contact Us</a>
 									</li>
 								</ul>									
 							</nav>				
 						</div>								
 					</div>
-					<p class="footer__copyright">© Susparsa 2021</p>
+					<small class="footer__copyright">© Susparsa 2021</small>
 				</div>
 			</footer>		
 		</div>

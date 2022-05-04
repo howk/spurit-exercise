@@ -225,7 +225,7 @@ fieldset legend {
   box-shadow: 0 0 4px #1ae9d7;
 }
 
-.header__logo__picture {
+.header__logo-picture {
   display: block;
 }
 
@@ -346,20 +346,20 @@ fieldset legend {
   margin-bottom: 47px;
 }
 
-.footer__columns__col {
+.footer__col {
   width: 100%;
   max-width: 370px;
   padding-right: 120px;
   margin-bottom: 40px;
 }
 
-.footer__columns__col:last-child {
+.footer__col:last-child {
   max-width: 250px;
   padding-right: 0;
 }
 
 @media (max-width: 1200px) {
-  .footer__columns__col {
+  .footer__col {
     padding-right: 60px;
   }
 }
@@ -372,20 +372,20 @@ fieldset legend {
     flex-wrap: wrap;
     margin-bottom: 0;
   }  
-  .footer__columns__col:nth-child(1) {
+  .footer__col:nth-child(1) {
     order: 3;
     width: 100%;
     max-width: 100%;
     text-align: center;
     padding-right: 0;
   }
-  .footer__columns__col:nth-child(2) {
+  .footer__col:nth-child(2) {
     order: 1;
     width: 50%;
     max-width: 50%;
     padding-right: 20px;
   }  
-  .footer__columns__col:last-child {
+  .footer__col:last-child {
     order: 2;
     width: 50%;
     max-width: 50%;
@@ -397,13 +397,13 @@ fieldset legend {
   .footer {
     padding-top: 40px;
   }  
-  .footer__columns__col:nth-child(2) {
+  .footer__col:nth-child(2) {
     width: 100%;
     max-width: 100%;
     padding-right: 0;
     text-align: center;
   }  
-  .footer__columns__col:last-child {
+  .footer__col:last-child {
     width: 100%;
     max-width: 100%;
     padding-left: 0;
@@ -414,6 +414,7 @@ fieldset legend {
 .footer__copyright {
   font-size: 16px;
   line-height: 1;
+  display: block;
 }
 
 @media (max-width: 1200px) {
@@ -422,11 +423,11 @@ fieldset legend {
   }
 }
 
-.footer__list__item {
+.footer__list-item {
   margin-bottom: 10px;
 }
 
-.footer__list__link {
+.footer__list-link {
   display: inline-block;
   font-size: 16px;
   line-height: 1.4;
@@ -435,7 +436,7 @@ fieldset legend {
   letter-spacing: 0.07em;
 }
 
-.footer__list__link:hover {
+.footer__list-link:hover {
   text-decoration: underline;
 }
 
@@ -509,7 +510,7 @@ fieldset legend {
   border-bottom: none;
 }
 
-.accordion__item__title {
+.accordion__item-title {
   display: block;
   width: 100%;
   text-align: left;
@@ -523,11 +524,11 @@ fieldset legend {
   padding-right: 30px;
 }
 
-.accordion__item__title:focus-visible {
+.accordion__item-title:focus-visible {
   outline: var(--focus-outline-width) var(--focus-outline-color) solid;
 }
 
-.accordion__item__title::after {
+.accordion__item-title::after {
   content: "";
   width: 13px;
   height: 1;
@@ -537,7 +538,7 @@ fieldset legend {
   top: 50%;
 }
 
-.accordion__item__title::before {
+.accordion__item-title::before {
   content: "";
   width: 1px;
   height: 13px;
@@ -548,11 +549,11 @@ fieldset legend {
   margin-top: -6px;
 }
 
-.accordion__item_active .accordion__item__title::before {
+.accordion__item_active .accordion__item-title::before {
   display: none;
 }
 
-.accordion__item__body {
+.accordion__item-body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.025em;
@@ -563,7 +564,7 @@ fieldset legend {
   display: none;
 }
 
-.accordion__item_active .accordion__item__body {
+.accordion__item_active .accordion__item-body {
   display: block;
 }
 
@@ -639,7 +640,7 @@ fieldset legend {
   }
 }
 
-.product-card__photo-big__picture {
+.product-card__photo-big-picture {
   display: block;
   width: 100%;
 }
@@ -945,7 +946,7 @@ fieldset legend {
   position: relative;
 }
 
-.products-grid__item__photo {
+.products-grid__item-photo {
   display: block;
   width: 100%;
   position: relative;
@@ -954,7 +955,7 @@ fieldset legend {
   overflow: hidden;
 }
 
-.products-grid__item__picture {
+.products-grid__item-picture {
   position: absolute;
   left: 0;
   top: 0;
@@ -966,11 +967,11 @@ fieldset legend {
   transition-duration: 200ms;
 }
 
-.products-grid__item__photo:hover .products-grid__item__picture {
+.products-grid__item-photo:hover .products-grid__item-picture {
   transform: scale(1.05, 1.05);
 }
 
-.products-grid__item__name {
+.products-grid__item-name {
   font-size: 16px;
   line-height: 1.3;
   color: var(--text-color-primary);
@@ -978,24 +979,24 @@ fieldset legend {
   margin-bottom: 7px;
 }
 
-.products-grid__item__name a {
+.products-grid__item-name a {
   color: var(--text-color-primary);
   text-decoration: none;
 }
 
-.products-grid__item__price {
+.products-grid__item-price {
   font-size: 16px;
   line-height: 1.3;
   color: var(--text-color-primary);
   text-align: center;
 }
 
-.products-grid__item__colors-palette.colors-palette {
+.products-grid__item-colors-palette.colors-palette {
   justify-content: center;
   margin-bottom: 8px;
 }
 
-.products-grid__item__product-tags {
+.products-grid__item-product-tags {
   position: absolute;
   left: 0;
   top: 0;
