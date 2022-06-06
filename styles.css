@@ -216,6 +216,7 @@ fieldset legend {
 .header__logo {
   display: block;
   margin-top: -5px;
+  max-width: 139px;
 }
 
 .header__logo:focus-visible {
@@ -227,6 +228,7 @@ fieldset legend {
 
 .header__logo-picture {
   display: block;
+  width: 100%;
 }
 
 .menu {
